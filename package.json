@@ -1,0 +1,16 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "a pinkish resume",
+  "main": "index.html",
+  "scripts": {
+    "start": "browser-sync start --server --files \"css/*.css\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "av8ta",
+  "license": "MIT",
+  "homepage": "http://turtle-308.getforge.io/",
+  "devDependencies": {
+    "browser-sync": "2.26.7"
+  }
+}
