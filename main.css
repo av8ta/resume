@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --bg: rgba(22, 22, 22, 0.95);
+  --text: rgba(255, 183, 195, 0.95);
+  --progress: rgba(255, 144, 162, 0.5);
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Montserrat', sans-serif;
+  padding: 2rem;
+  padding-top: 1rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+content {
+  padding-top: 3rem;
+}
+
+aside {
+  padding-right: 2rem;
+}
+
+label {
+  padding-right: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.contact {
+  padding-top: 3rem;
+  font-size: 0.8rem;
+}
+
+.skills {
+  padding-top: 1rem;
+}
+
+
+
+.progress {
+  padding-top: 0.5rem;
+}
+
+progress {
+  /* turn off styling */
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+
+  /* no default border in FF and Opera */
+  border: none;
+
+  /* Dimensions */
+  /* width: 1rem; */
+  height: 0.5rem;
+}
+
+/* Firefox  */
+progress {
+  background: var(--bg);
+  border: 1px solid #333;
+}
+progress::-moz-progress-bar {
+  background: var(--progress);
+}
+progress:not([value])::-moz-progress-bar {
+  background: #fdd;
+}
+
+/* Chrome */
+progress::-webkit-progress-bar {
+  background: var(--bg);
+}
+progress::-webkit-progress-value {
+  background: var(--progress);
+}
+progress:not([value])::-webkit-progress-bar {
+  background: #fdd;
+}
