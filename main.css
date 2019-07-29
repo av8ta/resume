@@ -15,6 +15,7 @@ html {
   font-family: 'Montserrat', sans-serif;
   padding: 2rem;
   padding-top: 1rem;
+  font-size: 1rem;
 }
 
 main {
@@ -28,10 +29,15 @@ header h1 {
 
 content {
   padding-top: 3rem;
+  /* line-height: 1rem; */
+}
+
+content p {
+  padding-top: 0.5rem;
 }
 
 aside {
-  padding-right: 2rem;
+  padding-right: 0.5rem;
 }
 
 label {
@@ -42,7 +48,7 @@ label {
 
 .contact {
   padding-top: 3rem;
-  font-size: 0.8rem;
+  /* font-size: 0.8rem; */
 }
 
 .skills {
@@ -90,4 +96,23 @@ progress::-webkit-progress-value {
 }
 progress:not([value])::-webkit-progress-bar {
   background: #fdd;
+}
+
+@media (max-width: 40rem) {
+  html {
+    font-size: 1rem;
+  }
+  content {
+    font-size: 1rem;
+  }
+  section {
+    font-size: 0.5rem;
+  }
+  main {
+    grid-template-columns: 0.5fr 4fr;
+    padding: 0;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
 }
